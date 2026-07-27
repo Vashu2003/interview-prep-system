@@ -1,6 +1,6 @@
 # Core Interview Readiness
 
-Source of truth: `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+Source of truth: `context/PROFILE.md`
 
 ## Resume Defense Topics
 
@@ -45,4 +45,3 @@ Score each Core topic from 0 to 5:
 - 3: can answer a normal interview question
 - 4: can handle follow-ups with examples
 - 5: can defend implementation, tradeoffs, and metrics clearly
-

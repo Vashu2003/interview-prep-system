@@ -1,12 +1,12 @@
 ﻿# LLM Context Bundle
 
-Generated: 2026-07-27T21:37:27
+Generated: 2026-07-27T23:10:59
 
 Purpose: single startup context file for LLM-run interview-prep sessions.
 
 ## LLM Session Protocol
 
-Source: `C:\Users\Vashu singh\interview-prep-system\LLM_SESSION_PROTOCOL.md`
+Source: `LLM_SESSION_PROTOCOL.md`
 
 # LLM Session Protocol
 
@@ -19,9 +19,11 @@ Before starting a session, the LLM must read:
 1. `llm-context.md`
 2. `README.md`
 3. The latest session file in `sessions/`
-4. `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+4. `context/PROFILE.md`
 
-`llm-context.md` is generated from the repo Markdown files and selected external profile files. Regenerate it after important edits.
+`llm-context.md` is generated from the repo Markdown files and repo-local context snapshots. Regenerate it after important edits.
+
+This repo must remain portable. Do not depend on absolute local paths such as `C:/Users/...` during normal operation. Use files under `context/` instead.
 
 ## Session Rules
 
@@ -38,7 +40,7 @@ Before starting a session, the LLM must read:
 
 ### Core Interview Readiness
 
-Use this when the session is about being interview-ready from `PROFILE.md`.
+Use this when the session is about being interview-ready from `context/PROFILE.md`.
 
 Primary focus:
 - resume/profile claim defense
@@ -80,9 +82,67 @@ Quality score:
 - 4: strong answer with examples
 - 5: strong answer with implementation detail, tradeoffs, metrics, and follow-up resilience
 
+## LLM Handoff
+
+Source: `LLM_HANDOFF.md`
+
+# LLM Handoff
+
+This repository is portable. An LLM should be able to continue the interview-prep system from the GitHub repo alone.
+
+Repository:
+
+```text
+https://github.com/Vashu2003/interview-prep-system
+```
+
+## Start Here
+
+Read these files in order:
+
+1. `LLM_HANDOFF.md`
+2. `LLM_SESSION_PROTOCOL.md`
+3. `llm-context.md`
+4. Latest file in `sessions/`
+
+Do not require access to `C:/Users/...` paths. Repo-local context snapshots live in `context/`.
+
+## Source Files
+
+- `context/PROFILE.md` - current profile/resume source of truth
+- `context/recovered-interview-prep-tracker.md` - rebuilt tracker from recovered files
+- `context/LEAN_TRACK.md` - recovered high-yield prioritization
+- `context/interview-prep-nextalphaai-bairesdev.md` - role-specific prep notes
+- `topics/` - Core and Broad topic catalogs
+- `sessions/` - one Markdown file per attempted session
+
+## How To Continue
+
+For every session:
+
+1. Ask for energy: `low`, `medium`, or `high`.
+2. Pick mode: `Core Interview Readiness` or `Broad Concept Coverage`.
+3. Do a short revision of Core topics.
+4. Teach the topic.
+5. Grill moderately after teaching.
+6. Write a new Markdown file under `sessions/`.
+7. Run analytics generation if tools are available.
+8. Rebuild `llm-context.md` if tools are available.
+9. Commit and push changes if GitHub write access is available.
+
+If tools are unavailable, output the exact Markdown patch needed for the user to apply.
+
+## Important Behavior
+
+- One question at a time.
+- Every attempt counts, even incomplete or weak sessions.
+- Do not skip logging because the session was low energy.
+- Keep grilling moderate while the user is rebuilding knowledge.
+- The main goal is interview readiness from `context/PROFILE.md`.
+
 ## Repo README
 
-Source: `C:\Users\Vashu singh\interview-prep-system\README.md`
+Source: `README.md`
 
 # Interview Prep System
 
@@ -95,7 +155,7 @@ This repo tracks every interview-prep attempt, even weak or incomplete sessions.
 ## Modes
 
 1. Core Interview Readiness
-   - Source of truth: `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+   - Source of truth: `context/PROFILE.md`
    - Goal: become interview-ready for roles matching the profile.
 
 2. Broad Concept Coverage
@@ -171,11 +231,13 @@ This repo is intended to be backed by a private GitHub repository. Session attem
 
 ## LLM Sessions
 
-An LLM running a prep session should start by reading `LLM_SESSION_PROTOCOL.md` and `llm-context.md`. The context bundle includes repo docs, topics, session history, and external prep/profile files.
+An LLM running a prep session should start by reading `LLM_HANDOFF.md`, `LLM_SESSION_PROTOCOL.md`, and `llm-context.md`. The context bundle includes repo docs, topics, session history, and repo-local prep/profile context files.
+
+The repo is portable: another LLM should be able to continue from the GitHub link alone.
 
 ## Session Template
 
-Source: `C:\Users\Vashu singh\interview-prep-system\SESSION_TEMPLATE.md`
+Source: `SESSION_TEMPLATE.md`
 
 # Session: YYYY-MM-DD - Topic
 
@@ -230,7 +292,7 @@ Committed: no
 
 ## Topic: broad-concept-coverage
 
-Source: `C:\Users\Vashu singh\interview-prep-system\topics\broad-concept-coverage.md`
+Source: `topics/broad-concept-coverage.md`
 
 # Broad Concept Coverage
 
@@ -290,11 +352,11 @@ Scope: full-stack development concepts that support interviews but are not the m
 
 ## Topic: core-interview-readiness
 
-Source: `C:\Users\Vashu singh\interview-prep-system\topics\core-interview-readiness.md`
+Source: `topics/core-interview-readiness.md`
 
 # Core Interview Readiness
 
-Source of truth: `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+Source of truth: `context/PROFILE.md`
 
 ## Resume Defense Topics
 
@@ -340,9 +402,9 @@ Score each Core topic from 0 to 5:
 - 4: can handle follow-ups with examples
 - 5: can defend implementation, tradeoffs, and metrics clearly
 
-## External Context: PROFILE.md
+## Portable Context: PROFILE.md
 
-Source: `C:\Users\Vashu singh\JobSearch\PROFILE.md`
+Source: `context/PROFILE.md`
 
 # Master Profile â€” Vashu Singh
 
@@ -461,9 +523,9 @@ WhatsApp Business API), fintech integrations (Digio e-KYC, CDSL), and internal A
 - Note: AI Code Reviewer (kept above) is also ~1yr old (pushed 2025-07-05) â€” still solid and already properly
   linked, but if a 5th project slot opens up, codebase-rag or HCP CRM are more current alternatives.
 
-## External Context: interview-prep-tracker.md
+## Portable Context: recovered-interview-prep-tracker.md
 
-Source: `C:\Users\Vashu singh\JobSearch\interview-prep-tracker.md`
+Source: `context/recovered-interview-prep-tracker.md`
 
 # Interview Prep Tracker - Vashu Singh
 
@@ -741,9 +803,9 @@ Start with Session 1: SQL/indexing and the 30% query performance claim.
 First question to answer:
 "What was the slow query, what index did you add, and how did you verify the 30% improvement?"
 
-## External Context: interview-prep-nextalphaai-bairesdev.md
+## Portable Context: interview-prep-nextalphaai-bairesdev.md
 
-Source: `C:\Users\Vashu singh\JobSearch\interview-prep-nextalphaai-bairesdev.md`
+Source: `context/interview-prep-nextalphaai-bairesdev.md`
 
 # Interview Prep â€” Vashu Singh
 
@@ -849,9 +911,9 @@ Role: **Full Stack / Front End Engineer (Mobile Fintech)**. The AI transcribes y
 
 You've shipped real production fintech software in a year. These are checking for exactly what you already do. Go in calm.
 
-## External Context: LEAN_TRACK.md
+## Portable Context: LEAN_TRACK.md
 
-Source: `C:\Users\Vashu singh\Desktop\laptop-migration\Desktop\LEAN_TRACK.md`
+Source: `context/LEAN_TRACK.md`
 
 # LEAN TRACK v1 â€” High-Yield Reprioritization (2026-06-22)
 
@@ -906,7 +968,7 @@ Lead with TIER 1 #1 â€” the SQL/indexing "defend your 30%" prep, since it's
 
 ## Session: 2026-07-27-system-scope-rebuild
 
-Source: `C:\Users\Vashu singh\interview-prep-system\sessions\2026-07-27-system-scope-rebuild.md`
+Source: `sessions/2026-07-27-system-scope-rebuild.md`
 
 # Session: 2026-07-27 - System Scope Rebuild
 

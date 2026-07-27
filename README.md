@@ -9,7 +9,7 @@ This repo tracks every interview-prep attempt, even weak or incomplete sessions.
 ## Modes
 
 1. Core Interview Readiness
-   - Source of truth: `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+   - Source of truth: `context/PROFILE.md`
    - Goal: become interview-ready for roles matching the profile.
 
 2. Broad Concept Coverage
@@ -85,4 +85,6 @@ This repo is intended to be backed by a private GitHub repository. Session attem
 
 ## LLM Sessions
 
-An LLM running a prep session should start by reading `LLM_SESSION_PROTOCOL.md` and `llm-context.md`. The context bundle includes repo docs, topics, session history, and external prep/profile files.
+An LLM running a prep session should start by reading `LLM_HANDOFF.md`, `LLM_SESSION_PROTOCOL.md`, and `llm-context.md`. The context bundle includes repo docs, topics, session history, and repo-local prep/profile context files.
+
+The repo is portable: another LLM should be able to continue from the GitHub link alone.

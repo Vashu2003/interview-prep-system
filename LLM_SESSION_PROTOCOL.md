@@ -9,9 +9,11 @@ Before starting a session, the LLM must read:
 1. `llm-context.md`
 2. `README.md`
 3. The latest session file in `sessions/`
-4. `C:/Users/Vashu singh/JobSearch/PROFILE.md`
+4. `context/PROFILE.md`
 
-`llm-context.md` is generated from the repo Markdown files and selected external profile files. Regenerate it after important edits.
+`llm-context.md` is generated from the repo Markdown files and repo-local context snapshots. Regenerate it after important edits.
+
+This repo must remain portable. Do not depend on absolute local paths such as `C:/Users/...` during normal operation. Use files under `context/` instead.
 
 ## Session Rules
 
@@ -28,7 +30,7 @@ Before starting a session, the LLM must read:
 
 ### Core Interview Readiness
 
-Use this when the session is about being interview-ready from `PROFILE.md`.
+Use this when the session is about being interview-ready from `context/PROFILE.md`.
 
 Primary focus:
 - resume/profile claim defense
@@ -69,4 +71,3 @@ Quality score:
 - 3: acceptable interview answer
 - 4: strong answer with examples
 - 5: strong answer with implementation detail, tradeoffs, metrics, and follow-up resilience
-
