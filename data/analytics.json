@@ -1,0 +1,44 @@
+﻿{
+    "generated_at":  "2026-07-27T21:16:41",
+    "sessions_attempted":  1,
+    "streak_days":  1,
+    "topics_covered":  [
+                           "Interview prep system scope"
+                       ],
+    "weak_topics":  [
+
+                    ],
+    "average_quality_score":  4,
+    "energy_trend":  [
+                         {
+                             "date":  "2026-07-27",
+                             "energy":  "medium",
+                             "topic":  "Interview prep system scope"
+                         }
+                     ],
+    "mode_split":  {
+                       "Core Interview Readiness":  1,
+                       "Broad Concept Coverage":  0
+                   },
+    "revision_frequency":  0,
+    "git_commit_count":  0,
+    "interview_readiness_percentage":  20,
+    "sessions":  [
+                     {
+                         "file":  "sessions/2026-07-27-system-scope-rebuild.md",
+                         "date":  "2026-07-27",
+                         "mode":  "Core Interview Readiness",
+                         "topic":  "Interview prep system scope",
+                         "energy":  "medium",
+                         "status":  "attempted",
+                         "revision_done":  false,
+                         "quality_score":  4,
+                         "readiness_delta":  1,
+                         "tags":  [
+                                      "system-design",
+                                      "scope",
+                                      "tracker"
+                                  ]
+                     }
+                 ]
+}
