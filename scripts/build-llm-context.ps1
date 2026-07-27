@@ -50,6 +50,7 @@ $builder = [System.Text.StringBuilder]::new()
 Add-FileSection -Builder $builder -Path (Join-Path $Root 'LLM_SESSION_PROTOCOL.md') -Label 'LLM Session Protocol' -Root $Root
 Add-FileSection -Builder $builder -Path (Join-Path $Root 'LLM_HANDOFF.md') -Label 'LLM Handoff' -Root $Root
 Add-FileSection -Builder $builder -Path (Join-Path $Root 'README.md') -Label 'Repo README' -Root $Root
+Add-FileSection -Builder $builder -Path (Join-Path $Root 'SYLLABUS.md') -Label 'Syllabus' -Root $Root
 Add-FileSection -Builder $builder -Path (Join-Path $Root 'SESSION_TEMPLATE.md') -Label 'Session Template' -Root $Root
 
 foreach ($file in (Get-ChildItem -LiteralPath (Join-Path $Root 'topics') -File -Filter '*.md' | Sort-Object Name)) {

@@ -88,3 +88,5 @@ This repo is intended to be backed by a private GitHub repository. Session attem
 An LLM running a prep session should start by reading `LLM_HANDOFF.md`, `LLM_SESSION_PROTOCOL.md`, and `llm-context.md`. The context bundle includes repo docs, topics, session history, and repo-local prep/profile context files.
 
 The repo is portable: another LLM should be able to continue from the GitHub link alone.
+
+`SYLLABUS.md` controls the prep path and should be used to prevent topic drift.

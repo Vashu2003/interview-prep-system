@@ -7,13 +7,16 @@ This repo is used by an LLM to run interview-prep sessions.
 Before starting a session, the LLM must read:
 
 1. `llm-context.md`
-2. `README.md`
-3. The latest session file in `sessions/`
-4. `context/PROFILE.md`
+2. `SYLLABUS.md`
+3. `README.md`
+4. The latest session file in `sessions/`
+5. `context/PROFILE.md`
 
 `llm-context.md` is generated from the repo Markdown files and repo-local context snapshots. Regenerate it after important edits.
 
 This repo must remain portable. Do not depend on absolute local paths such as `C:/Users/...` during normal operation. Use files under `context/` instead.
+
+The LLM must follow `SYLLABUS.md` as the prep path. If a session topic is not in the syllabus, either map it to the closest syllabus item or ask before adding a new track.
 
 ## Session Rules
 

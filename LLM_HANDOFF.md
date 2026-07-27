@@ -14,8 +14,9 @@ Read these files in order:
 
 1. `LLM_HANDOFF.md`
 2. `LLM_SESSION_PROTOCOL.md`
-3. `llm-context.md`
-4. Latest file in `sessions/`
+3. `SYLLABUS.md`
+4. `llm-context.md`
+5. Latest file in `sessions/`
 
 Do not require access to `C:/Users/...` paths. Repo-local context snapshots live in `context/`.
 
@@ -25,6 +26,7 @@ Do not require access to `C:/Users/...` paths. Repo-local context snapshots live
 - `context/recovered-interview-prep-tracker.md` - rebuilt tracker from recovered files
 - `context/LEAN_TRACK.md` - recovered high-yield prioritization
 - `context/interview-prep-nextalphaai-bairesdev.md` - role-specific prep notes
+- `SYLLABUS.md` - required learning path for both modes
 - `topics/` - Core and Broad topic catalogs
 - `sessions/` - one Markdown file per attempted session
 
@@ -51,4 +53,4 @@ If tools are unavailable, output the exact Markdown patch needed for the user to
 - Do not skip logging because the session was low energy.
 - Keep grilling moderate while the user is rebuilding knowledge.
 - The main goal is interview readiness from `context/PROFILE.md`.
-
+- Follow `SYLLABUS.md` to avoid hallucinating a new prep path.
