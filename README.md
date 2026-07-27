@@ -40,6 +40,12 @@ Generate analytics:
 powershell -ExecutionPolicy Bypass -File .\scripts\generate-analytics.ps1
 ```
 
+Build LLM context:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-llm-context.ps1
+```
+
 Open dashboard:
 
 ```powershell
@@ -76,3 +82,7 @@ The dashboard tracks:
 ## GitHub
 
 This repo is intended to be backed by a private GitHub repository. Session attempts should be committed and pushed even when the session is weak, incomplete, or mostly diagnostic.
+
+## LLM Sessions
+
+An LLM running a prep session should start by reading `LLM_SESSION_PROTOCOL.md` and `llm-context.md`. The context bundle includes repo docs, topics, session history, and external prep/profile files.
