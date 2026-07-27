@@ -43,7 +43,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\generate-analytics.ps1
 Open dashboard:
 
 ```powershell
-Start-Process .\dashboard\index.html
+powershell -ExecutionPolicy Bypass -File .\scripts\open-dashboard.ps1
 ```
 
 Commit a session attempt:
@@ -51,6 +51,12 @@ Commit a session attempt:
 ```powershell
 git add sessions data
 git commit -m "Log prep session YYYY-MM-DD topic-name"
+```
+
+Create a new session file:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\new-session.ps1 -Topic "SQL indexing 30 percent claim" -Mode "Core Interview Readiness" -Energy low
 ```
 
 ## Metrics
@@ -67,3 +73,6 @@ The dashboard tracks:
 - Git commit history
 - interview readiness percentage
 
+## GitHub
+
+This repo is intended to be backed by a private GitHub repository. Session attempts should be committed and pushed even when the session is weak, incomplete, or mostly diagnostic.
