@@ -1,6 +1,6 @@
 ﻿# LLM Context Bundle
 
-Generated: 2026-07-28T21:02:31
+Generated: 2026-07-28T21:03:28
 
 Purpose: single startup context file for LLM-run interview-prep sessions.
 
@@ -1537,6 +1537,6 @@ Weak spots:
 
 ## Commit
 
-Committed: no
+Committed: yes
 
 

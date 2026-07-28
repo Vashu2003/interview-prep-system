@@ -74,4 +74,4 @@ Weak spots:
 
 ## Commit
 
-Committed: no
+Committed: yes
