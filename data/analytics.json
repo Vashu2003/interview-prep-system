@@ -1,9 +1,10 @@
 ﻿{
-    "generated_at":  "2026-07-27T23:15:25",
-    "sessions_attempted":  1,
-    "streak_days":  1,
+    "generated_at":  "2026-07-28T21:02:31",
+    "sessions_attempted":  2,
+    "streak_days":  2,
     "topics_covered":  [
-                           "Interview prep system scope"
+                           "Interview prep system scope",
+                           "SQL indexing 30 percent claim"
                        ],
     "weak_topics":  [
 
@@ -14,15 +15,20 @@
                              "date":  "2026-07-27",
                              "energy":  "medium",
                              "topic":  "Interview prep system scope"
+                         },
+                         {
+                             "date":  "2026-07-28",
+                             "energy":  "medium",
+                             "topic":  "SQL indexing 30 percent claim"
                          }
                      ],
     "mode_split":  {
-                       "Core Interview Readiness":  1,
+                       "Core Interview Readiness":  2,
                        "Broad Concept Coverage":  0
                    },
-    "revision_frequency":  0,
-    "git_commit_count":  6,
-    "interview_readiness_percentage":  20,
+    "revision_frequency":  50,
+    "git_commit_count":  7,
+    "interview_readiness_percentage":  29,
     "sessions":  [
                      {
                          "file":  "sessions/2026-07-27-system-scope-rebuild.md",
@@ -38,6 +44,23 @@
                                       "system-design",
                                       "scope",
                                       "tracker"
+                                  ]
+                     },
+                     {
+                         "file":  "sessions/2026-07-28-sql-indexing-30-percent-query-claim.md",
+                         "date":  "2026-07-28",
+                         "mode":  "Core Interview Readiness",
+                         "topic":  "SQL indexing 30 percent claim",
+                         "energy":  "medium",
+                         "status":  "attempted",
+                         "revision_done":  true,
+                         "quality_score":  4,
+                         "readiness_delta":  2,
+                         "tags":  [
+                                      "sql",
+                                      "postgresql",
+                                      "indexing",
+                                      "resume-defense"
                                   ]
                      }
                  ]
