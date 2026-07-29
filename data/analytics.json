@@ -1,7 +1,7 @@
 ﻿{
-    "generated_at":  "2026-07-28T21:03:23",
-    "sessions_attempted":  2,
-    "streak_days":  2,
+    "generated_at":  "2026-07-29T21:18:03",
+    "sessions_attempted":  3,
+    "streak_days":  3,
     "topics_covered":  [
                            "Interview prep system scope",
                            "SQL indexing 30 percent claim"
@@ -20,15 +20,20 @@
                              "date":  "2026-07-28",
                              "energy":  "medium",
                              "topic":  "SQL indexing 30 percent claim"
+                         },
+                         {
+                             "date":  "2026-07-29",
+                             "energy":  "medium",
+                             "topic":  "SQL indexing 30 percent claim"
                          }
                      ],
     "mode_split":  {
-                       "Core Interview Readiness":  2,
+                       "Core Interview Readiness":  3,
                        "Broad Concept Coverage":  0
                    },
-    "revision_frequency":  50,
-    "git_commit_count":  8,
-    "interview_readiness_percentage":  29,
+    "revision_frequency":  66.7,
+    "git_commit_count":  9,
+    "interview_readiness_percentage":  35,
     "sessions":  [
                      {
                          "file":  "sessions/2026-07-27-system-scope-rebuild.md",
@@ -56,6 +61,23 @@
                          "revision_done":  true,
                          "quality_score":  4,
                          "readiness_delta":  2,
+                         "tags":  [
+                                      "sql",
+                                      "postgresql",
+                                      "indexing",
+                                      "resume-defense"
+                                  ]
+                     },
+                     {
+                         "file":  "sessions/2026-07-29-sql-indexing-30-percent-claim.md",
+                         "date":  "2026-07-29",
+                         "mode":  "Core Interview Readiness",
+                         "topic":  "SQL indexing 30 percent claim",
+                         "energy":  "medium",
+                         "status":  "attempted",
+                         "revision_done":  true,
+                         "quality_score":  4,
+                         "readiness_delta":  1,
                          "tags":  [
                                       "sql",
                                       "postgresql",
