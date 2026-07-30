@@ -1,10 +1,11 @@
 ﻿{
-    "generated_at":  "2026-07-29T21:18:27",
-    "sessions_attempted":  3,
-    "streak_days":  3,
+    "generated_at":  "2026-07-30T21:09:00",
+    "sessions_attempted":  4,
+    "streak_days":  4,
     "topics_covered":  [
                            "Interview prep system scope",
-                           "SQL indexing 30 percent claim"
+                           "SQL indexing 30 percent claim",
+                           "Support response-time 60 percent claim"
                        ],
     "weak_topics":  [
 
@@ -25,15 +26,20 @@
                              "date":  "2026-07-29",
                              "energy":  "medium",
                              "topic":  "SQL indexing 30 percent claim"
+                         },
+                         {
+                             "date":  "2026-07-30",
+                             "energy":  "high",
+                             "topic":  "Support response-time 60 percent claim"
                          }
                      ],
     "mode_split":  {
-                       "Core Interview Readiness":  3,
+                       "Core Interview Readiness":  4,
                        "Broad Concept Coverage":  0
                    },
-    "revision_frequency":  66.7,
-    "git_commit_count":  10,
-    "interview_readiness_percentage":  35,
+    "revision_frequency":  75,
+    "git_commit_count":  11,
+    "interview_readiness_percentage":  40,
     "sessions":  [
                      {
                          "file":  "sessions/2026-07-27-system-scope-rebuild.md",
@@ -82,6 +88,24 @@
                                       "sql",
                                       "postgresql",
                                       "indexing",
+                                      "resume-defense"
+                                  ]
+                     },
+                     {
+                         "file":  "sessions/2026-07-30-support-response-time-60-percent-claim.md",
+                         "date":  "2026-07-30",
+                         "mode":  "Core Interview Readiness",
+                         "topic":  "Support response-time 60 percent claim",
+                         "energy":  "high",
+                         "status":  "attempted",
+                         "revision_done":  true,
+                         "quality_score":  4,
+                         "readiness_delta":  2,
+                         "tags":  [
+                                      "support-automation",
+                                      "ai",
+                                      "websocket",
+                                      "django",
                                       "resume-defense"
                                   ]
                      }
